@@ -25,6 +25,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/scss/main.scss'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -67,5 +68,20 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extend(config, { isDev, isClient }) {
+      // ..
+      config.module.rules.push({
+          // Shaders
+          test: /\.(glsl|vs|fs|vert|frag)$/,
+          exclude: /node_modules/,
+          use: [
+            'ts-shader-loader',
+          ],
+      })
+      // Sets webpack's mode to development if `isDev` is true.
+      if (isDev) {
+        config.mode = 'development'
+      }
+    }
   }
 }

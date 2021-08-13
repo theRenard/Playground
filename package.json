@@ -16,7 +16,13 @@
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.15.1",
-    "nuxt": "^2.15.7"
+    "fibers": "^5.0.0",
+    "gsap": "^3.7.1",
+    "nuxt": "^2.15.7",
+    "phaser": "^3.55.2",
+    "sass": "^1.37.5",
+    "sass-loader": "10",
+    "three": "^0.131.3"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
@@ -25,12 +31,14 @@
     "@nuxtjs/eslint-config-typescript": "^6.0.1",
     "@nuxtjs/eslint-module": "^3.0.2",
     "@nuxtjs/tailwindcss": "^4.2.0",
+    "@types/three": "^0.131.0",
     "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-vue": "^7.12.1",
     "postcss": "^8.3.5",
     "prettier": "^2.3.2",
-    "push-dir": "^0.4.1"
+    "push-dir": "^0.4.1",
+    "ts-shader-loader": "^1.0.6"
   }
 }
