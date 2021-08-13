@@ -1,5 +1,5 @@
 declare function perlin(x:type, y:number);
 
-declare module '@/Utils/perlin' {
+declare module '@/utils/perlin' {
   export = perlin;
 }

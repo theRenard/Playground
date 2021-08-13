@@ -1,5 +1,5 @@
-import getImageData from '@/Utils/getImageData';
-import math from '@/Utils/math';
+import getImageData from '@/utils/getImageData';
+import math from '@/utils/math';
 import { Vector2 } from 'three';
 import guiParams from './params';
 

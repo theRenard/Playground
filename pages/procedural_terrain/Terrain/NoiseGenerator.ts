@@ -1,5 +1,5 @@
-import SimplexNoise from '@/Utils/SimplexNoise';
-import PerlinNoise from '@/Utils/PerlinNoise';
+import SimplexNoise from '@/utils/SimplexNoise';
+import PerlinNoise from '@/utils/PerlinNoise';
 import guiParams from './params';
 
 const params = guiParams.noise;

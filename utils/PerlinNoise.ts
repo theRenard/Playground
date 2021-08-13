@@ -1,6 +1,6 @@
 /* eslint-disable class-methods-use-this */
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import perlin from '@/Utils/perlin';
+import perlin from '@/utils/perlin';
 
 export default class PerlinNoise {
   noise2D(x: number, y: number): any {

@@ -1,4 +1,4 @@
-import math from '@/Utils/math';
+import math from '@/utils/math';
 import { Vector2 } from 'three';
 import Heightmap from './HeightMap';
 import NoiseGenerator from './NoiseGenerator';

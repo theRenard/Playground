@@ -3,6 +3,6 @@ declare class SimplexNoise {
   noise2D(x: number, y: number): number;
 }
 
-declare module '@/Utils/SimplexNoise' {
+declare module '@/utils/SimplexNoise' {
   export = SimplexNoise;
 }

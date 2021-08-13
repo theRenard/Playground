@@ -22,7 +22,8 @@
     "phaser": "^3.55.2",
     "sass": "^1.37.5",
     "sass-loader": "10",
-    "three": "^0.131.3"
+    "three": "^0.131.3",
+    "vue-property-decorator": "^9.1.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
