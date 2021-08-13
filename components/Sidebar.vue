@@ -1,6 +1,6 @@
 <template>
     <div class="sidebar">
-        <div class="sidebar-backdrop" @click="closeSidebarPanel" v-if="isPanelOpen"></div>
+        <div v-if="isPanelOpen" class="sidebar-backdrop" @click="closeSidebarPanel"></div>
         <transition name="slide">
             <div v-if="isPanelOpen"
                  class="sidebar-panel">
@@ -13,14 +13,14 @@
 <script>
 
 export default {
-  methods: {
-    closeSidebarPanel() {
-      this.$store.commit('toggleNav');
-    },
-  },
   computed: {
     isPanelOpen() {
       return this.$store.state.isNavOpen;
+    },
+  },
+  methods: {
+    closeSidebarPanel() {
+      this.$store.commit('toggleNav');
     },
   },
 };

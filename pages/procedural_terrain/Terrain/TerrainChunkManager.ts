@@ -1,10 +1,10 @@
-import Entity from '@/engines/Three/Three-Entity';
 import { Group, Vector2, Vector3 } from 'three';
 import NoiseGenerator from './NoiseGenerator';
 import HeightGenerator from './HeightGenerator';
 import guiParams from './params';
 import Heightmap from './HeightMap';
 import TerrainChunk from './TerrainChunk';
+import Entity from '@/engines/Three/Three-Entity';
 
 export default class TerrainChunkManager extends Entity {
   name: 'TerrainChunkManager';
@@ -15,6 +15,7 @@ export default class TerrainChunkManager extends Entity {
     chunk: TerrainChunk,
     edges: string[],
   }};
+
   init(): void {
     this.initNoise();
     this.initTerrain();
@@ -112,9 +113,11 @@ export default class TerrainChunkManager extends Entity {
       this.terrainChunks[k].chunk.rebuild();
     }
   }
+
   // eslint-disable-next-line class-methods-use-this, @typescript-eslint/no-empty-function
   update() {
   }
+
   // eslint-disable-next-line class-methods-use-this, @typescript-eslint/no-empty-function
   destroy() {
   }
