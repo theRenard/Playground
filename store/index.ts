@@ -1,19 +1,11 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import { NuxtState } from "@nuxt/types/app";
 
-Vue.use(Vuex);
+export const state = () => ({
+  isNavOpen: false,
+})
 
-export default new Vuex.Store({
-  state: {
-    isNavOpen: false,
+export const mutations = {
+  toggleNav(state: NuxtState) {
+    state.isNavOpen = !state.isNavOpen;
   },
-  mutations: {
-    toggleNav(state) {
-      state.isNavOpen = !state.isNavOpen;
-    },
-  },
-  actions: {
-  },
-  modules: {
-  },
-});
+}

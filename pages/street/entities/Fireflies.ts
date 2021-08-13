@@ -1,7 +1,3 @@
-import Entity from '@/engines/Three/Three-Entity';
-import firefliesVertexShader from '@/shaders/fireflies/vertex.glsl';
-import firefliesFragmentShader from '@/shaders/fireflies/fragment.glsl';
-
 import {
   BufferGeometry,
   BufferAttribute,
@@ -9,6 +5,10 @@ import {
   AdditiveBlending,
   Points,
 } from 'three';
+import Entity from '@/engines/Three/Three-Entity';
+import firefliesVertexShader from '@/engines/shaders/fireflies/vertex.glsl';
+import firefliesFragmentShader from '@/engines/shaders/fireflies/fragment.glsl';
+
 
 const firefliesCount = 30;
 export default class Fireflies extends Entity {

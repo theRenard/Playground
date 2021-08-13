@@ -1,7 +1,7 @@
-import Entity from '@/engines/Three/Three-Entity';
 import {
   Texture, sRGBEncoding, MeshBasicMaterial, Mesh, Group,
 } from 'three';
+import Entity from '@/engines/Three/Three-Entity';
 
 export default class Street extends Entity {
   name = 'Street';

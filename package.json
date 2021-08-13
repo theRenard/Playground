@@ -15,7 +15,10 @@
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/axios": "^5.13.6",
     "@nuxtjs/pwa": "^3.3.5",
+    "@types/dat.gui": "^0.7.7",
     "core-js": "^3.15.1",
+    "dat.gui": "^0.7.7",
+    "fast-simplex-noise": "^4.0.0",
     "fibers": "^5.0.0",
     "gsap": "^3.7.1",
     "nuxt": "^2.15.7",
@@ -23,6 +26,7 @@
     "sass": "^1.37.5",
     "sass-loader": "10",
     "three": "^0.131.3",
+    "vue-class-component": "^7.2.6",
     "vue-property-decorator": "^9.1.2"
   },
   "devDependencies": {

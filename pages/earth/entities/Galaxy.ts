@@ -1,7 +1,7 @@
-import Entity from '@/engines/Three/Three-Entity';
 import {
   Mesh, Texture, SphereBufferGeometry, BackSide, MeshBasicMaterial,
 } from 'three';
+import Entity from '@/engines/Three/Three-Entity';
 
 export default class Earth extends Entity {
   name = 'Earth';
@@ -33,6 +33,7 @@ export default class Earth extends Entity {
   update(): void {
     this.galaxyMesh.rotation.y -= 0.002;
   }
+
   destroy(): void {
     this.getSketch().getScene().remove(this.galaxyMesh);
     this.galaxyGeometry.dispose();

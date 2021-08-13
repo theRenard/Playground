@@ -1,7 +1,7 @@
-import Entity from '@/engines/Three/Three-Entity';
 import {
   Mesh, Texture, MeshPhongMaterial, SphereBufferGeometry,
 } from 'three';
+import Entity from '@/engines/Three/Three-Entity';
 
 export default class Earth extends Entity {
   name: 'Earth';
@@ -34,6 +34,7 @@ export default class Earth extends Entity {
   update(): void {
     this.earthMesh.rotation.y -= 0.0015;
   }
+
   destroy(): void {
     this.getSketch().getScene().remove(this.earthMesh);
     this.earthGeometry.dispose();

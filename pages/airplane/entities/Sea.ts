@@ -1,10 +1,10 @@
 /* eslint-disable newline-per-chained-call */
-import Entity from '@/engines/Three/Three-Entity';
-import waterVertexShader from '@/shaders/water/vertex.glsl';
-import waterFragmentShader from '@/shaders/water/fragment.glsl';
 import {
   PlaneGeometry, ShaderMaterial, Vector2, Color, Mesh,
 } from 'three';
+import Entity from '@/engines/Three/Three-Entity';
+import waterVertexShader from '@/engines/shaders/water/vertex.glsl';
+import waterFragmentShader from '@/engines/shaders/water/fragment.glsl';
 
 export default class Airplane extends Entity {
   name = 'Sea';
@@ -66,6 +66,7 @@ export default class Airplane extends Entity {
     console.log('add sea');
 
   }
+
   update(elapsedTime: number): void {
     const { uniforms } = this.sea.material as ShaderMaterial;
     uniforms.uTime.value = elapsedTime;

@@ -1,7 +1,7 @@
-import Entity from '@/engines/Three/Three-Entity';
 import {
   AmbientLight, PointLight, PointLightHelper,
 } from 'three';
+import Entity from '@/engines/Three/Three-Entity';
 
 export default class Clouds extends Entity {
   name = 'Lights';
@@ -28,6 +28,7 @@ export default class Clouds extends Entity {
   // eslint-disable-next-line class-methods-use-this, @typescript-eslint/no-empty-function
   update(): void {
   }
+
   destroy(): void {
     this.getSketch().getScene().remove(this.ambientlight);
     this.getSketch().getScene().remove(this.pointLight);

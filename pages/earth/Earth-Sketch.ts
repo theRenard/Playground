@@ -1,8 +1,8 @@
-import Sketch from '@/engines/Three/Three';
 import Lights from './entities/Lights';
 import Earth from './entities/Earth';
 import Galaxy from './entities/Galaxy';
 import Clouds from './entities/Clouds';
+import Sketch from '@/engines/Three/Three';
 
 export default class EarthSketch extends Sketch {
 
