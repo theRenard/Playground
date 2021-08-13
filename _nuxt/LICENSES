@@ -18,13 +18,6 @@
  */
 
 
-/**
-  * vue-class-component v7.2.6
-  * (c) 2015-present Evan You
-  * @license MIT
-  */
-
-
 /*!
   * vue-router v3.5.2
   * (c) 2021 Evan You
@@ -42,6 +35,13 @@
  * (c) 2021 Evan You
  * @license MIT
  */
+
+
+/**
+  * vue-class-component v7.2.6
+  * (c) 2015-present Evan You
+  * @license MIT
+  */
 
 
 /*!
@@ -70,10 +70,3 @@
  * Copyright 2010-2021 Three.js Authors
  * SPDX-License-Identifier: MIT
  */
-
-
-/**
-  * vue-class-component v7.2.6
-  * (c) 2015-present Evan You
-  * @license MIT
-  */
