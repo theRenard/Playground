@@ -33,8 +33,8 @@
 </template>
 
 <script>
-import Burger from '@/components/Burger.vue';
-import Sidebar from '@/components/Sidebar.vue';
+import Burger from '~/components/Navigation/Burger.vue';
+import Sidebar from '~/components/Navigation/Sidebar.vue';
 
 export default {
   name: 'App',

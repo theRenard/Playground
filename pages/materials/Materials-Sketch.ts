@@ -1,6 +1,6 @@
-import Sketch from '@/engines/Three/Three';
 import Materials from './entities/Materials';
 import Lights from './entities/Lights';
+import Sketch from '@/engines/Three/Three';
 
 export default class AirplaneSketch extends Sketch {
 

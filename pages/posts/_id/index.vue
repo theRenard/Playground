@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center items-center h-screen">
+  <div class="flex justify-center items-center h-screen hidden">
     <div class="max-w-sm rounded overflow-hidden shadow-lg bg-white">
       <img class="w-full" src="https://source.unsplash.com/random/1600x900" alt="Sunset in the mountains">
       <div class="px-6 py-4">

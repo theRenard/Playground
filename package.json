@@ -23,6 +23,7 @@
     "gsap": "^3.7.1",
     "nuxt": "^2.15.7",
     "phaser": "^3.55.2",
+    "reflect-metadata": "^0.1.13",
     "sass": "^1.37.5",
     "sass-loader": "10",
     "three": "^0.131.3",

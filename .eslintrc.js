@@ -9,8 +9,7 @@ module.exports = {
     'plugin:nuxt/recommended',
     'prettier'
   ],
-  plugins: [
-  ],
+  plugins: [],
   // add your custom rules here
   ignorePatterns: ["/static/**/*.*"],
   rules: {
@@ -19,6 +18,10 @@ module.exports = {
     'lines-between-class-members': 'off',
     'padded-blocks': 'off',
     'no-param-reassign': 'off',
-    'max-len': 'off'
+    'max-len': 'off',
+    '@typescript-eslint/no-unused-vars': [
+      'warning',
+    ],
+
   },
 }
