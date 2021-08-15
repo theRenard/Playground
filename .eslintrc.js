@@ -20,7 +20,7 @@ module.exports = {
     'no-param-reassign': 'off',
     'max-len': 'off',
     '@typescript-eslint/no-unused-vars': [
-      'warning',
+      'warn',
     ],
 
   },
