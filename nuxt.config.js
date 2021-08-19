@@ -66,6 +66,15 @@ export default {
     }
   },
 
+  loaders: {
+    ts: {
+      silent: true
+    },
+    tsx: {
+      silent: true
+    }
+  },
+
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 

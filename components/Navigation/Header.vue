@@ -7,10 +7,6 @@ export default class Header extends Vue {
 
   title = "Hello header";
 
-  test(test: string) {
-    console.log('test');
-  }
-
   render(h: Vue.CreateElement): Vue.VNode {
     return <h1 class="red">{this.title}</h1>
     ;

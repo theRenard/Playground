@@ -1,21 +1,11 @@
-<template>
-  <div class="posts">
-    <div class="posts-title">
-      <h1>Posts</h1>
-    </div>
-  </div>
-</template>
-
-<script lang="ts">
+<script lang="tsx">
+import 'reflect-metadata';
 import { Component, Vue } from "vue-property-decorator";
 import PostPreview from "~/components/Posts/PostPreview.vue";
 import { Post } from "~/@types/posts";
 
 @Component({
-  components: {
-    PostPreview,
-  },
-  layout: 'blog'
+  // layout: 'blog'
 })
 export default class Index extends Vue {
   posts: Post[] = [
@@ -32,8 +22,18 @@ export default class Index extends Vue {
       thumbnail: "https://via.placeholder.com/150x150",
     }
   ];
+
+  render(h: Vue.CreateElement): Vue.VNode {
+    return (
+      <div class="posts">
+        <div class="posts-title">
+          <h1>Posts</h1>
+          {this.posts.map((post) => (
+            <PostPreview data-title={'ciao'} post={post}  />
+          ))}
+        </div>
+      </div>
+    );
+  }
 }
-
-
-
 </script>

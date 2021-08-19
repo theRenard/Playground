@@ -39,7 +39,11 @@ import { Post } from '~/@types/posts';
 @Component
 export default class PostPreview extends Vue {
 
-  @Prop({ required: true }) post!: Post;
+  @Prop({
+    type: Object as Vue.PropType<Post>,
+    required: true
+  })
+  post!: Post;
 
 }
 </script>
