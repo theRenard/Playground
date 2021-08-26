@@ -18,12 +18,12 @@ export default class Index extends Vue {
     {
       id: 2,
       title: "Hello World",
-      previewText: "This is a post",
+      previewText: "This is a second post",
       thumbnail: "https://via.placeholder.com/150x150",
     }
   ];
 
-  render(h: Vue.CreateElement): Vue.VNode {
+  render(): Vue.VNode {
     return (
       <div class="posts">
         <div class="posts-title">

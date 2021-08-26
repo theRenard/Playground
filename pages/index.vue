@@ -10,19 +10,19 @@
       <li>
         <span>Three</span>
         <ul class="sub-menu">
-          <li><router-link to="/airplane">Airplane</router-link></li>
-          <li><router-link to="/street">Street</router-link></li>
-          <li><router-link to="/earth">Earth</router-link></li>
-          <li><router-link to="/planet">Planet</router-link></li>
-          <li><router-link to="/materials">Materials</router-link></li>
-          <li><router-link to="/procedural-terrain">Procedural Terrain</router-link></li>
+          <li><nuxt-link to="/airplane">Airplane</nuxt-link></li>
+          <li><nuxt-link to="/street">Street</nuxt-link></li>
+          <li><nuxt-link to="/earth">Earth</nuxt-link></li>
+          <li><nuxt-link to="/planet">Planet</nuxt-link></li>
+          <li><nuxt-link to="/materials">Materials</nuxt-link></li>
+          <li><nuxt-link to="/procedural-terrain">Procedural Terrain</nuxt-link></li>
         </ul>
       </li>
       <li>
-        <router-link to="/">Home</router-link>
+        <nuxt-link to="/">Home</nuxt-link>
       </li>
       <li>
-      <router-link to="/platform">Platform</router-link>
+      <nuxt-link to="/platform">Platform</nuxt-link>
       </li>
 
     </ul>

@@ -19,9 +19,5 @@ module.exports = {
     'padded-blocks': 'off',
     'no-param-reassign': 'off',
     'max-len': 'off',
-    '@typescript-eslint/no-unused-vars': [
-      'warn',
-    ],
-
   },
 }
