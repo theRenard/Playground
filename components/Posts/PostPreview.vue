@@ -14,7 +14,7 @@ export default class PostPreview extends Vue {
 
   render(): Vue.VNode {
     return (
-      <nuxt-link to={{ id: this.post.title }}>
+      <nuxt-link to={{ name: 'posts-id', params: { id: this.post.id }}}>
         <div class="md:w-1/2 px-3 mb-6 w-full">
           <div class="flex w-full h-full flex-wrap bg-gray-800 overflow-hidden rounded">
             <div class="w-2/6">
