@@ -33,7 +33,7 @@
 
 <script lang="ts">
 import 'reflect-metadata';
-import { Component, Vue, Prop } from "vue-property-decorator";
+import { Component, Vue, Prop } from "nuxt-property-decorator";
 import { Post } from '~/@types/posts';
 
 @Component

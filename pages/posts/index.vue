@@ -1,11 +1,11 @@
 <script lang="tsx">
 import 'reflect-metadata';
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue } from "nuxt-property-decorator";
 import PostPreview from "~/components/Posts/PostPreview.vue";
 import { Post } from "~/@types/posts";
 
 @Component({
-  // layout: 'blog'
+  // layout: 'blog',
 })
 export default class Index extends Vue {
   posts: Post[] = [
