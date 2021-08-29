@@ -2,12 +2,15 @@
 import 'reflect-metadata';
 import { Component, Vue } from "nuxt-property-decorator";
 import PostPreview from "~/components/Posts/PostPreview.vue";
+import AppControlInput from "~/components/UI-Components/AppControlInput.vue";
 import { Post } from "~/@types/posts";
 
 @Component({
   // layout: 'blog',
 })
 export default class Index extends Vue {
+  value: string = "";
+
   posts: Post[] = [
     {
       id: 1,
@@ -32,6 +35,10 @@ export default class Index extends Vue {
             <PostPreview data-title={'ciao'} post={post}  />
           ))}
         </div>
+        <AppControlInput value={this.value} controlType="input" vOn:input={(e: string) => { this.value = e }}>
+          <span>Ciao</span>
+        </AppControlInput>
+        <div>{this.value}</div>
       </div>
     );
   }
