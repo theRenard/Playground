@@ -9,13 +9,9 @@ import { Post } from '~/@types/posts.d';
 })
 export default class Index extends Vue {
 
-  loadedPosts: Post[] = [{
-    id: 1,
-    author: '0',
-    title: 'string',
-    thumbnailLink: 'string',
-    content: 'string',
-  }];
+  get loadedPosts(): Post[] {
+    return this.$store.state.posts;
+  }
 
   render(): Vue.VNode {
     return (

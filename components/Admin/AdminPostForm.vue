@@ -27,7 +27,7 @@ export default class Index extends Vue {
   }
 
   onSave() {
-    console.log('cance');
+    this.$emit('submit', this.editedPost);
   }
 
   render(): Vue.VNode {
