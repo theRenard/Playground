@@ -1,10 +1,13 @@
 <script lang="tsx">
 import 'reflect-metadata';
 import { Component, Vue, Prop } from "nuxt-property-decorator";
-import { Post } from '~/@types/posts';
+import { Post } from '~/@types/posts.d';
 
 @Component
 export default class PostPreview extends Vue {
+
+  @Prop({ type: Boolean })
+  isAdmin!: boolean;
 
   @Prop({
     type: Object as Vue.PropType<Post>,
@@ -12,9 +15,13 @@ export default class PostPreview extends Vue {
   })
   post!: Post;
 
+  get postLink() {
+    return this.isAdmin ? `/admin/${this.post.id}` : `/posts/${this.post.id}`;
+  }
+
   render(): Vue.VNode {
     return (
-      <nuxt-link to={{ name: 'posts-id', params: { id: this.post.id }}}>
+      <nuxt-link to={this.postLink}>
         <div class="md:w-1/2 px-3 mb-6 w-full">
           <div class="flex w-full h-full flex-wrap bg-gray-800 overflow-hidden rounded">
             <div class="w-2/6">
@@ -28,7 +35,7 @@ export default class PostPreview extends Vue {
                     <img src="https://randomuser.me/api/portraits/men/5.jpg" />
                   </div>
                   <div class="flex-1 pl-2">
-                    <h2 class="text-white mb-1">{this.post.previewText}</h2>
+                    <h2 class="text-white mb-1">{this.post.thumbnailLink}</h2>
                     <p class="text-white opacity-50 text-xs">May 18</p>
                   </div>
                 </div>
