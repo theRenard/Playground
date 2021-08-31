@@ -1,6 +1,6 @@
 import { NuxtState, Context } from "@nuxt/types/app";
 import axios from "axios";
-import { Post } from "~/@types/posts";
+import { Post } from "~/types/posts";
 
 export const state: NuxtState = () => ({
   isNavOpen: false,
